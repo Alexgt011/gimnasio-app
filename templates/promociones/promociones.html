@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+
+{% block title %} Promociones {% endblock %}
+
+{% block contenido %}
+<center>
+  <h1>Nueva Promoción</h1>
+</center>
+
+<div class="container">
+  <div class="row">
+    <div class="col col-3"></div>
+    <div class="col col-6">
+      <!-- Aquí puedes incluir el formulario si es necesario -->
+    </div>
+    <div class="col col-3"></div>
+  </div>
+</div>
+
+<br><br>
+
+<div class="container text-center">
+  <div class="row">
+    <div class="col col-1"></div>
+    <div class="col col-10">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Nombre Del Plan</th>
+            <th scope="col">Fecha de Inicio de Promoción</th>
+            <th scope="col">Fecha Fin de la Promoción</th>
+            <th scope="col">Tipo de Promoción</th>
+            <th scope="col">Editar</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for plan in planes_db %}
+          <tr>
+            <th scope="row">{{ plan['nombre'] }}</th>
+            <td>{{ plan['fecha_ini'] }}</td>
+            <td>{{ plan['fecha_fin'] }}</td>
+            <td>{{ plan['tipo_prom'] }}</td>
+            <td>
+              <form action="{{ url_for('updatepromociones', id=plan['id']) }}">
+                <button class="button_edit"> Editar </button>
+              </form>
+            </td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+    <div class="col col-1"></div>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,137 @@
+.main-footer {
+  position: relative;
+  height: 500px; /* Altura del footer */
+  color: white; /* Color del texto en el footer */
+  margin-top: 40px;
+}
+
+.footer-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); /* Fondo opaco, ajusta el valor alpha según lo necesites */
+  z-index: -1;
+  background-image: url(https://www.ffscrossfit.com/static/sitefiles/pages/InnerBanner-About.jpg);
+  filter: brightness(40%);
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+
+}
+
+.footer-nav {
+  grid-column: 2 / 3;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.footer-nav ul {
+  list-style-type: none;
+}
+
+.footer-nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 2.5rem; /* Tamaño del texto de la lista */
+  font-family:Oswald,sans-serif;
+  line-height: 90px;
+  transition:all 1s;
+
+}
+
+.footer-location {
+  grid-column: 3 / 4;
+  text-align: right;
+  margin-top: 45px;
+  margin-right: 80px;
+  transition: all 1s;
+
+}
+.footer-location iframe
+{transition: all 1s;
+  border-radius: 19% 81% 14% 86% / 90% 20% 80% 10% ;
+}
+.footer-location:hover iframe
+{
+  border-radius: 200% 200% 0% 200%;
+  rotate: 45deg ;
+}
+.footer-social {
+  grid-column: 1 / 2;
+  display: flex;
+  align-items: center; /* Centrar verticalmente los iconos */
+  justify-content: center; /* Centrar horizontalmente los iconos */
+  margin-top: -20px;
+  margin-left: -8px;
+  gap: 50px ;
+  transition: all 1s;
+}
+
+.footer-social a {
+  color: white;
+  text-decoration: none;
+  margin: 10px 0; /* Espacio entre los iconos */
+  font-size: 24px; /* Tamaño de los iconos de redes sociales */
+  transition: all .5s;
+}
+
+.footer-copyright {
+  grid-column: 1 / -1;
+  text-align: center;
+  margin-top: -18px;
+}
+
+.footer-copyright p {
+  font-size: 14px;
+}
+ .apertura ul li
+{
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem; /* Tamaño del texto de la lista */
+  font-family:Oswald,sans-serif;
+  line-height: 90px;
+}
+.apertura h4
+{
+
+  color: white;
+  text-decoration: none;
+  font-size: 2.5rem; /* Tamaño del texto de la lista */
+  font-family:Oswald,sans-serif;
+  line-height: 10px;
+  margin-top: 40px;
+  margin-left: 33px;
+}
+.apertura ul
+{
+  list-style:none;
+}
+.apertura li
+{
+  text-decoration: none;
+  list-style:none;
+}
+
+.apertura
+{
+ align-items: center;
+ text-align: center;
+ margin-top: 50px;
+}
+
+.footer-social a:hover
+{
+  color:red ;
+}
+.footer-nav ul li a:hover
+{
+  color: #9e0000;
+  text-decoration: underline ;
+}
+

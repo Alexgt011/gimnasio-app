@@ -1,0 +1,74 @@
+{% extends './base.html' %}
+
+{% block title %} Instructores {% endblock %}
+
+{% block contenido %}
+<center><h1>Lista de Instructores</h1></center>
+<br><br>
+
+<div class="container text-center">
+  <div class="row">
+    <div class="col col-1"></div>
+    <div class="col col-10">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Nombre del Instructor</th>
+            <th scope="col">Edad</th>
+            <th scope="col">Dirección</th>
+            <th scope="col">Rol del Instructor</th>
+            <th scope="col">Turno Inicio</th>
+            <th scope="col">Turno Fin</th>
+            <th scope="col">User Name</th>
+            <th scope="col">Editar</th>
+            <th scope="col">Eliminar</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for instructor in instructores %}
+          <tr>
+            <th scope="row">{{ instructor['nombre'] }}</th>
+            <td>{{ instructor['edad'] }}</td>
+            <td>{{ instructor['direccion'] }}</td>
+            <td>{{ instructor['rol'] }}</td>
+            <td>{{ instructor['turno_ini'] }}</td>
+            <td>{{ instructor['turno_fin'] }}</td>
+            <td>{{ instructor['user_name'] }}</td>
+
+            <td>
+              <form action="{{ url_for('updateInstructores', id=instructor['id']) }}">
+                <button class="button_edit">Editar</button>
+              </form>
+            </td>
+
+            <td>
+              <form method="POST" action="{{ url_for('deleteinstructor', id=instructor['id']) }}">
+                <button class="button_delete"
+                        type="submit"
+                        onclick="return confirm('¿Seguro de eliminar Instructor?')">
+                  <span class="text">Eliminar</span>
+                  <span class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                         viewBox="0 0 24 24">
+                      <path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"></path>
+                    </svg>
+                  </span>
+                </button>
+              </form>
+            </td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+    <div class="col col-1"></div>
+  </div>
+</div>
+
+<center>
+  <a href="/newinstructores">
+    <button type="submit" class="button_registrar">Registrar Instructor</button>
+  </a>
+</center>
+
+{% endblock %}

@@ -1,0 +1,74 @@
+{% extends './base.html' %}
+
+{% block title %} Actualizar Instructor {% endblock %}
+
+{% block contenido %}
+<center><h1>Actualizar Instructor</h1></center>
+<div class="container">
+  <div class="row">
+    <div class="col col-3"></div>
+    <div class="col col-6">
+      <form action="" method="post">
+
+        <div class="inputGroup">
+          <input type="text" value="{{ instructor['nombre'] }}" required autocomplete="on" name="nombre">
+          <label for="nombre" style="background-color: #e4e4e4dd;">Nombre Instructor</label>
+        </div>
+
+        <div class="inputGroup">
+          <input type="number" value="{{ instructor['edad'] }}" required autocomplete="on" name="edad">
+          <label for="edad" style="background-color: #e4e4e4dd;">Edad</label>
+        </div>
+
+        <div class="inputGroup">
+          <input type="text" value="{{ instructor['direccion'] }}" required autocomplete="on" name="direccion">
+          <label for="direccion" style="background-color: #e4e4e4dd;">Dirección</label>
+        </div>
+
+        <div>
+          <label for="rol" style="background-color: #e4e4e4dd;">Rol del Instructor</label>
+        </div>
+        <div class="radio-inputs">
+          <label class="radio">
+            <input type="radio" name="rol" value="Musculacion" {% if instructor['rol'] == 'Musculacion' %}checked{% endif %}>
+            <span class="name">Musculación</span>
+          </label>
+          <label class="radio">
+            <input type="radio" name="rol" value="Aerobicos-Zumba" {% if instructor['rol'] == 'Aerobicos-Zumba' %}checked{% endif %}>
+            <span class="name">Aeróbicos-Zumba</span>
+          </label>
+          <label class="radio">
+            <input type="radio" name="rol" value="Aerobicos-Kombat" {% if instructor['rol'] == 'Aerobicos-Kombat' %}checked{% endif %}>
+            <span class="name">Aeróbicos-Kombat</span>
+          </label>
+        </div>
+
+        <div class="inputGroup">
+          <input type="time" value="{{ instructor['turno_ini'] }}" autocomplete="on" name="turno_ini">
+          <label for="turno_ini" style="background-color: #e4e4e4dd;">Turno Inicio</label>
+        </div>
+
+        <div class="inputGroup">
+          <input type="time" value="{{ instructor['turno_fin'] }}" autocomplete="on" name="turno_fin">
+          <label for="turno_fin" style="background-color: #e4e4e4dd;">Turno Fin</label>
+        </div>
+
+        <div class="inputGroup">
+          <input type="text" value="{{ instructor['user_name'] }}" required autocomplete="on" name="user_name">
+          <label for="user_name" style="background-color: #e4e4e4dd;">Nombre de Usuario</label>
+        </div>
+
+        <div class="inputGroup">
+          <input type="password" value="{{ instructor['password'] }}" required autocomplete="on" name="password">
+          <label for="password" style="background-color: #e4e4e4dd;">Contraseña</label>
+        </div>
+
+        <input type="hidden" name="id" value="{{ instructor['id'] }}">
+
+        <button type="submit" class="button_registrar">Actualizar Instructor</button>
+      </form>
+    </div>
+    <div class="col col-3"></div>
+  </div>
+</div>
+{% endblock %}

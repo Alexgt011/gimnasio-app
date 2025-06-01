@@ -1,0 +1,260 @@
+{% extends 'base.html' %}
+
+{% block title %} Inicio Super Mercado {% endblock %}
+
+{% block contenido %}
+<!-- SECCION TITULO -->
+<!-- FUENTES USADAS -->
+
+
+<!-- FIN FUENTES USADAS -->
+
+<div class="static-image-container">
+
+  <div class="carousel">
+    <div class="slides" [style.transform]="'translateX(' + (-currentIndex * 100) + '%)'">
+      <div class="slide"><img src="https://perfectbodystore.com/wp-content/uploads/2023/01/front-creatine.jpg" alt="Slide 1"></div>
+      <div class="slide"><img src="https://s1.1zoom.me/b5050/922/Fitness_Gym_Workout_Legs_598125_1920x1200.jpg" alt="Slide 2"></div>
+      <div class="slide"><img src="https://admin.fairchildfun.com/backend/admin/media/fitness/fitness-hero-body-builder.jpg" alt="Slide 3"></div>
+    </div>
+
+    <button (click)="prevSlide()" class="control left">&#10094;</button>
+    <button (click)="nextSlide()" class="control right">&#10095;</button>
+  </div>
+  <div class="image-overlay">
+    <h1 class="font-weight-bold first-line ">BEAST</h1>
+    <h1 class="gym-text">GYM</h1>
+  </div>
+
+
+</div>
+<!-- FIN SECCION TITULO -->
+
+<!-- SECCION ENTRENADORES -->
+<section >
+  <div class="contenedor-bg-entrenadores"><div class="entrenadores-bg"></div></div>
+
+<div class="trainers-title">
+  <h1>INSTRUCTORES</h1>
+</div>
+
+<div class="card-container">
+  <div class="card">
+    <img src="https://images.squarespace-cdn.com/content/v1/5b149cc8b10598e485c999a2/1640790689705-V4WAYHT5XZ98KTHI808Z/personal-programming.png" class="card-img-top" alt="Card Image">
+    <div class="card-overlay">
+      <p>  TRAINER JOHN DOE </p>
+    </div>
+    <div class="redes">
+      <a href="https://www.facebook.com/groups/1568874776785569/user/100005591287285/"><i class="fa-brands fa-facebook fa-5x"></i></a>
+      <a href=""><i class="fa-brands fa-twitter fa-5x"></i></a>
+      <a href=""><i class="fa-brands fa-instagram fa-5x"></i></a>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://img77.uenicdn.com/image/upload/v1643815445/business/1aa3fe04-fc96-4621-9a22-17e5b69c39e2/carolyn-training-programsjpeg.jpg" class="card-img-top" alt="Card Image">
+    <div class="card-overlay">
+      <p>  TRAINER JOHN DOE </p>
+    </div>
+    <div class="redes">
+      <a href="https://www.facebook.com/giancarlo.santos.52"><i class="fa-brands fa-facebook fa-5x"></i></a>
+      <a href=""><i class="fa-brands fa-twitter fa-5x"></i></a>
+      <a href=""><i class="fa-brands fa-instagram fa-5x"></i></a>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu1mej-W-KH86JqAbwnvrRfPduQu1zOuL6Fw&usqp=CAU" class="card-img-top" alt="Card Image">
+    <div class="card-overlay">
+      <p>  TRAINER JOHN DOE </p>
+    </div>
+
+    <div class="redes">
+      <a href="https://www.facebook.com/ripperasmobb.rapcity"><i class="fa-brands fa-facebook fa-5x"></i></a>
+      <a href=""><i class="fa-brands fa-twitter fa-5x"></i></a>
+      <a href=""><i class="fa-brands fa-instagram fa-5x"></i></a>
+    </div>
+
+  </div>
+</div>
+
+</section>
+<!-- FIN SECCION ENTRENADORES -->
+<!-- PLANES  -->
+
+<div class="planes-container">
+  <h1 class="planes-title">Nuestros Planes</h1>
+  <div class="plan-card">
+    <img src="https://i1.adis.ws/i/boohooamplience/bmm23844_black_xl?$product_image_main_mobile$&fmt=webp" alt="Plan Image">
+    <div class="card-content">
+      <h5 class="plan-title">Plan/Simple</h5>
+      <p class="plan-price">100bs./mes</p>
+      <p class="plan-description">Solo incluye musculacion</p>
+     <a href="/clientes"> <button class="plan-button">Obtener Plan</button></a>
+    </div>
+  </div>
+
+  <div class="plan-card">
+    <img src="https://i.pinimg.com/550x/e7/2c/5d/e72c5de6bdc1adbe25ad664689dbf7a3.jpg" alt="Plan Image">
+    <div class="card-content">
+      <h5 class="plan-title">Plan/Aerobicos</h5>
+      <p class="plan-price">120bs./mes</p>
+      <p class="plan-description">Solo aerobicos</p>
+      <a href="/clientes"> <button class="plan-button">Obtener Plan</button></a>
+    </div>
+  </div>
+
+  <div class="plan-card">
+    <img src="https://i.pinimg.com/originals/3a/3a/c1/3a3ac1bdeafbb3da9e52d1b689d00de2.jpg" alt="Plan Image">
+    <div class="card-content">
+      <h5 class="plan-title">Plan/Total</h5>
+      <p class="plan-price">200bs./mes</p>
+      <p class="plan-description">Acceso ilimitado</p>
+      <a href="/clientes"> <button class="plan-button">Obtener Plan</button></a>
+    </div>
+  </div>
+</div>
+
+<!-- FIN PLANES -->
+<!-- SECCION NOSTROS  -->
+<section>
+<div class="title-nosotros"><h1>NOSOTROS</h1></div>
+
+<div class="nosotros-section">
+
+  <div class="nosotros-content">
+    <h2>MISION</h2>
+    <p>En BEAST GYM, nuestra misión es proporcionar un ambiente inclusivo y motivador donde las personas de todas las edades y niveles de condición física puedan alcanzar sus objetivos de bienestar. Nos esforzamos por ofrecer programas de ejercicio innovadores, equipos de alta calidad y un equipo de entrenadores dedicados que inspiren y guíen a nuestros miembros en su viaje hacia una vida más saludable y activa. Nuestro compromiso es promover el bienestar integral, fomentar la comunidad y ayudar a cada individuo a alcanzar su máximo potencial físico y mental. Juntos, trabajamos para construir un futuro más saludable y feliz para todos nuestros miembros."</p>
+  </div>
+  <div class="image-grid">
+    <div class="image-item">
+      <img src="https://cfuncannyfitness.com/wp-content/uploads/2020/03/nC0859hg-scaled-300x300.jpeg" alt="Imagen 1">
+
+      <div class="sedes">
+
+          <a href="https://maps.app.goo.gl/bz2hE31nrsq32QFh7">
+            <i class="fa-solid fa-crown coronita fa-4x"></i>
+            <h3>SEDE ZONA NORTE</h3>
+          </a>
+      </div>
+    </div>
+    <div class="image-item">
+      <img src="https://i.pinimg.com/550x/f5/1d/b9/f51db94f416f695ac80112c36dd48563.jpg" alt="Imagen 2">
+
+      <div class="sedes">
+
+        <a href="https://maps.app.goo.gl/Lx7K2RenifiMNrvH7">
+          <i class="fa-solid fa-crown coronita fa-4x"></i>
+          <h3>SEDE CENTRAL</h3>
+        </a>
+      </div>
+    </div>
+    <div class="image-item">
+      <img src="https://i.pinimg.com/474x/42/3c/77/423c77b16b09fe8b18de9dadb380cc3b.jpg" alt="Imagen 3">
+
+      <div class="sedes">
+
+        <a href="https://maps.app.goo.gl/kWfnJNnXcgXypEvo7">
+          <i class="fa-solid fa-crown coronita fa-4x"></i>
+          <h3>SEDE ZONA SUD</h3>
+        </a>
+      </div>
+    </div>
+    <div class="image-item">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfXggD0W1tPQ0MgHlxgh8YtY8FfVDP5l1EOM3AkRZQ2LGbTQBjeC3soOgPlFAReYZHGio&usqp=CAU" alt="Imagen 4">
+
+      <div class="sedes">
+        <a href="https://maps.app.goo.gl/qB7XTkDwN4x1dndj6">
+          <i class="fa-solid fa-crown coronita fa-4x"></i>
+          <h3>SEDE SUCRE</h3>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="objetivo-section">
+    <h2>VISION</h2>
+    <p id="hola">En BEAST GYM, aspiramos a ser reconocidos como el principal destino para la salud y el bienestar en nuestra comunidad y más allá. Nos esforzamos por ser un referente en la industria del fitness, ofreciendo instalaciones de vanguardia, programas de entrenamiento innovadores y un servicio excepcional al cliente. Buscamos inspirar y capacitar a las personas para que adopten un estilo de vida activo y saludable, contribuyendo así a una sociedad más saludable y feliz. Nuestra visión es crear un espacio donde cada persona se sienta bienvenida, apoyada y capacitada para alcanzar sus metas de bienestar, y donde la excelencia y la pasión por el fitness sean los pilares de todo lo que hacemos.</p>
+  </div>
+</div>
+</section>
+<!-- FIN SECCION NOSTROS  -->
+
+<!-- SECCION CLASES -->
+<div class="clases-container">
+  <div class="clase yoga">
+    <i class="fa-solid fa-heart fa-4x classes-icons"></i>
+    <h3 class="title-classes">YOGA</h3>
+    <p class="classes-description"> Nuestra de yoga de ayudara a relajarte y desestresarte
+    </p>
+  </div>
+  <div class="clase ciclistas">
+    <i class="fa-solid fa-bicycle fa-4x classes-icons"></i>
+    <h3 class="title-classes">SPINNING</h3>
+    <p class="classes-description">Clase intensa en bicicletas estacionarias, al ritmo de la musica </p>
+  </div>
+  <div class="clase peleadores">
+    <i class="fa-solid fa-hand-fist fa-4x classes-icons"></i>
+    <h3 class="title-classes">BEAST-KOMBAT</h3>
+    <p class="classes-description">Case aerobica de fittnes de combate, al buen ritmo de la musica</p>
+  </div>
+  <div class="clase fitness">
+    <i class="fa-solid fa-dumbbell fa-4x classes-icons"></i>
+    <h3 class="title-classes">MUSCULACION</h3>
+    <p class="classes-description">Clase con maquinas dirijida por expertos en la asignatura</p>
+  </div>
+  <div class="clase atleticos">
+    <i class="fa-solid fa-person-running fa-4x classes-icons"></i>
+    <h3 class="title-classes">FUNCIONAL</h3>
+    <p class="classes-description">Clase desarrollada con ejercicios con el mismo peso corporal</p>
+  </div>
+</div>
+<!-- FIN SECCION CLASES -->
+
+<!-- Sección de Beneficios -->
+
+<section class="beneficios-section">
+  <h2 class="titulo-beneficios">¿POR QUE ESCOGERNOS?</h2>
+
+  <div class="beneficios-row">
+    <div class="beneficio">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9cCnQbW2pSv7qB2Cyhb4q_JYhVq13Ka5EjCITPXZUa-cq3QNRdkEjDzsXSNDe_E1wBbs&usqp=CAU" alt="Beneficio 1">
+      <div class="beneficio-info">
+        <h3 class="beneficio-titulo">Beneficio 1: Mejora de la salud física</h3>
+        <p class="beneficio-descripcion">El ejercicio regular en el gimnasio puede ayudar a mejorar la salud cardiovascular, aumentar la resistencia muscular, fortalecer los huesos y mejorar la flexibilidad, lo que contribuye a una mejor calidad de vida y previene enfermedades crónicas como la diabetes tipo 2 y las enfermedades cardíacas.</p>
+      </div>
+    </div>
+
+    <div class="beneficio">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcryxXyjVNPTefrFtlw2mlofu4Wwho4AEhF7Hqtub3vrol-u48NkP8KYayTRdDDwhYbVo&usqp=CAU" alt="Beneficio 2">
+      <div class="beneficio-info">
+        <h3 class="beneficio-titulo">Beneficio 2: Control del peso y composición corporal</h3>
+        <p class="beneficio-descripcion">Un programa de ejercicio en el gimnasio, combinado con una alimentación saludable, puede ayudar a controlar el peso corporal y reducir el porcentaje de grasa corporal, lo que contribuye a una figura más tonificada y a una mayor confianza en uno mismo.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="beneficios-row">
+    <div class="beneficio">
+      <img src="data:image/jpeg;base64,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" alt="Beneficio 3">
+      <div class="beneficio-info">
+        <h3 class="beneficio-titulo">Beneficio 3: Reducción del estrés y mejora del bienestar mental</h3>
+        <p class="beneficio-descripcion">El ejercicio físico libera endorfinas, las cuales son conocidas como las hormonas de la felicidad, lo que puede ayudar a reducir los niveles de estrés, ansiedad y depresión. Además, el gimnasio proporciona un espacio para desconectar de las preocupaciones diarias y centrarse en el bienestar personal.</p>
+      </div>
+    </div>
+
+    <div class="beneficio">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDITKz2jjus77jdHOVbZagwep1FyIzxBTA6Q&usqp=CAU" alt="Beneficio 4">
+      <div class="beneficio-info">
+        <h3 class="beneficio-titulo">Beneficio 4: Socialización y comunidad</h3>
+        <p class="beneficio-descripcion">El gimnasio ofrece la oportunidad de conocer a otras personas con intereses similares en la salud y el fitness, lo que puede llevar a nuevas amistades y a un mayor sentido de pertenencia a una comunidad. Participar en clases grupales o entrenar con un compañero también puede aumentar la motivación y el compromiso con el ejercicio regular.</p>
+      </div>
+    </div>
+  </div>
+
+
+</section>
+
+<!-- Fin Sección de Beneficios -->
+
+
+{% endblock %}

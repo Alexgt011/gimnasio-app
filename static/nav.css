@@ -1,0 +1,64 @@
+/* navbar.component.css */
+
+.navbars {
+
+  background: black;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: -1;
+}
+.forma-nav
+{
+
+  width: 0px;
+  height: 0px;
+  margin-left: -90px;
+  position:fixed;
+  background-color: red;
+  z-index: 0;
+  clip-path: polygon(0 0, 100% 0%, 35% 45%, 0 65%);
+  transition:all 1s;
+  
+}
+
+.navbars:hover
+{
+  .forma-nav{
+  width: 2500px;
+  height: 400px;
+  }
+}
+
+.logo {
+
+  font-size: 3.8rem;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+  z-index: 1;
+}
+
+.nav-lists {
+  list-style: none;
+  display: flex;
+  margin: 0;
+}
+
+.nav-items {
+  margin-right: 15px;
+}
+
+.nav-links {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.3rem;
+  transition: color 0.3s;
+}
+
+.nav-links:hover {
+  color: red;
+}

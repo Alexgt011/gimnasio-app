@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+
+{% block title %} Actualizar Promoción {% endblock %}
+
+{% block contenido %}
+<center><h1>Añadir Promoción</h1></center>
+<div class="container">
+  <div class="row">
+    <div class="col col-3"></div>
+    <div class="col col-6">
+      <form action="" method="post">
+
+        <div class="inputGroup">
+          <input type="date" value="{{ plan.fecha_ini }}" autocomplete="on" name="fecha_ini">
+          <label for="fecha_ini" style="background-color: #e4e4e4dd;">Fecha de inicio</label>
+        </div>
+
+        <div class="inputGroup">
+          <input type="date" value="{{ plan.fecha_fin }}" autocomplete="on" name="fecha_fin">
+          <label for="fecha_fin" style="background-color: #e4e4e4dd;">Fecha de Finalización</label>
+        </div>
+
+        <div>
+          <label for="tipo_prom" style="background-color: #e4e4e4dd;">Tipo de Promoción</label>
+        </div>
+        <div class="radio-inputs">
+          <label class="radio">
+            <input type="radio" name="tipo_prom" checked="" autocomplete="on" value="2x1">
+            <span class="name">2x1</span>
+          </label>
+          <label class="radio">
+            <input type="radio" name="tipo_prom" value="10% de Descuento">
+            <span class="name">10% de Descuento</span>
+          </label>
+          <label class="radio">
+            <input type="radio" name="tipo_prom" value="Sin Promocion">
+            <span class="name">Sin Promoción</span>
+          </label>
+        </div>
+
+        <input type="hidden" id="id" name="id" value="{{ plan.id }}" />
+
+        <center>
+          <button type="submit" class="button_registrar">Actualizar Promoción</button>
+        </center>
+      </form>
+    </div>
+    <div class="col col-3"></div>
+  </div>
+</div>
+{% endblock %}

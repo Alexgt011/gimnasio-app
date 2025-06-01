@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+
+{% block title %} Actualizar Cliente {% endblock %}
+
+{% block contenido %}
+<center><h1>Modificar Cliente</h1></center>
+<div class="container">
+  <div class="row">
+    <div class="col col-3"></div>
+    <div class="col col-6">
+      <form action="" method="post">
+
+        <div class="inputGroup">
+          <input type="text" value="{{ cliente['nombre'] }}" required autocomplete="on" name="nombre">
+          <label for="nombre" style="background-color: #e4e4e4dd;">Nombre Completo</label>
+        </div>
+
+        <div class="inputGroup">
+          <input type="text" value="{{ cliente['nit_carnet'] }}" required autocomplete="on" name="nit_carnet">
+          <label for="nit_carnet" style="background-color: #e4e4e4dd;">Nit/carnet</label>
+        </div>
+
+        <div class="inputGroup">
+          <input type="date" value="{{ cliente['fecha_nac'] }}" autocomplete="on" name="fecha_nac">
+          <label for="fecha_nac" style="background-color: #e4e4e4dd;">Fecha Nacimiento</label>
+        </div>
+
+        <div>
+          <label for="plan" style="background-color: #e4e4e4dd;">Tipo de Plan</label>
+        </div>
+
+        <div class="radio-inputs">
+          <label class="radio">
+            <input type="radio" name="plan" value="Simple" {% if cliente['plan'] == 'Simple' %}checked{% endif %}>
+            <span class="name">SIMPLE</span>
+          </label>
+          <label class="radio">
+            <input type="radio" name="plan" value="Aerobicos" {% if cliente['plan'] == 'Aerobicos' %}checked{% endif %}>
+            <span class="name">AEROBICOS</span>
+          </label>
+          <label class="radio">
+            <input type="radio" name="plan" value="Total" {% if cliente['plan'] == 'Total' %}checked{% endif %}>
+            <span class="name">TOTAL</span>
+          </label>
+        </div>
+
+        <div class="inputGroup">
+          <input type="date" value="{{ cliente['fecha_inicio_plan'] }}" autocomplete="on" name="fecha_inicio_plan">
+          <label for="fecha_inicio_plan" style="background-color: #e4e4e4dd;">Inicio de Plan</label>
+        </div>
+
+        <div class="inputGroup">
+          <input type="date" value="{{ cliente['fecha_fin_plan'] }}" autocomplete="on" name="fecha_fin_plan">
+          <label for="fecha_fin_plan" style="background-color: #e4e4e4dd;">Finalización de Plan</label>
+        </div>
+
+        <input type="hidden" name="_id" value="{{ cliente['id'] }}" />
+
+        <button type="submit" class="button_registrar">Actualizar Cliente</button>
+      </form>
+    </div>
+    <div class="col col-3"></div>
+  </div>
+</div>
+{% endblock %}
