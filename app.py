@@ -170,3 +170,4 @@ if __name__ == '__main__':
     app.run(debug=True)"// Cambios para la v2.0" 
 "// Fix aplicado para versi¢n 2.1" 
 "// Funcionalidades para versi¢n 3.0" 
+"// Nueva interfaz agregada" 
