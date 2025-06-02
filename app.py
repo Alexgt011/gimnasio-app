@@ -167,4 +167,4 @@ def updatepromociones(id):
     return render_template('promociones/update_promociones.html', plan=plan)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True)"// Cambios para la v2.0" 
