@@ -30,9 +30,9 @@ Aplicación desarrollada para gestionar instructores, turnos, reportes y autenti
 
 ---
 
-## 🗂️ Gestión de versiones (Git)
+## Gestión de versiones
 
-![Gestión de versiones](static/images/ramas_git.png)
+![Gestión de versiones](static/images/gestion_versiones.png)
 
 Este diagrama representa cómo se implementaron correcciones (`fix`) y nuevas funcionalidades (`feature`) en ramas separadas, luego integradas a `main`.
 
