@@ -1,46 +1,62 @@
-# Sistema de Gestión de Gimnasio 🏋️‍♂️
+# 🏋️ Sistema de Gestión de Gimnasio
 
-Aplicación desarrollada para gestionar instructores, turnos, reportes y autenticación.
-
----
-
-## 🧾 Registro de versiones
-
-| Versión | Fecha     | Descripción                        |
-|--------|-----------|------------------------------------|
-| v1.0   | 2025-05-26 | Versión inicial funcional          |
-| v2.1   | 2025-05-30 | Fix en módulo de reportes (error)  |
-| v3.1   | 2025-06-02 | UI mejorada con nueva funcionalidad|
+Aplicación web desarrollada con Python y Flask para la gestión de instructores, turnos, autenticación y reportes.
 
 ---
 
-## 🔄 Solicitudes gestionadas
+## 📌 Registro de versiones
 
-### ✅ Solicitud de Cambio (Cliente)
-- **N°:** CR-0018
-- **Sistema:** Ventas
-- **Cambio:** Exportar a Excel (además de PDF)
+| Versión | Fecha       | Descripción                          |
+|---------|-------------|--------------------------------------|
+| v1.0    | 2025-05-26  | Versión inicial funcional            |
+| v2.1    | 2025-05-30  | Corrección en módulo de reportes     |
+| v3.1    | 2025-06-02  | Mejora visual + funcionalidad extra  |
+
+---
+
+## 🔁 Solicitudes gestionadas
+
+### 📝 Solicitud de Cambio (Cliente)
+- **ID:** CR-0018  
+- **Área:** Módulo de Ventas  
+- **Cambio solicitado:** Exportar también a Excel  
 - **Estado:** En desarrollo (Sprint 4)
 
-### 🐞 Solicitud de Corrección de Error
-- **N°:** CR-0019
-- **Sistema:** Autoservicio
-- **Error:** Ticket Bs 0
-- **Estado:** En espera de pruebas
+### 🐛 Solicitud de Corrección (Bug)
+- **ID:** CR-0019  
+- **Área:** Autoservicio  
+- **Error:** Ticket emitido con monto Bs 0  
+- **Estado:** En espera de validación QA
 
 ---
 
-## Gestión de versiones
+## 🔧 Gestión de versiones
+
+> Este diagrama explica cómo se manejan las ramas y las solicitudes del sistema:
 
 ![Gestión de versiones](static/images/gestion_versiones.png)
 
-Este diagrama representa cómo se implementaron correcciones (`fix`) y nuevas funcionalidades (`feature`) en ramas separadas, luego integradas a `main`.
+---
+
+## 📂 Archivos adicionales
+
+- [`CHANGELOG.md`](CHANGELOG.md): Registro detallado de cada versión publicada.
+- [`requirements.txt`](requirements.txt): Dependencias necesarias.
+- [`app.py`](app.py): Lógica principal del sistema.
 
 ---
 
-## 📁 Otros archivos
+## 🚀 Tecnologías utilizadas
 
-- [`CHANGELOG.md`](./CHANGELOG.md): registro detallado de cambios.
+- Python (Flask)
+- HTML/CSS
+- SQLite
+- Git/GitHub
 
+---
+
+## ✨ Autor
+
+**Alexander** – [GitHub](https://github.com/Alexgt011)
 
 
