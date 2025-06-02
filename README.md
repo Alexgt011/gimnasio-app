@@ -63,13 +63,34 @@ Aplicación web desarrollada con Python y Flask para la gestión de instructores
 
 ## 🔧 Gestión de versiones
 
+Este diagrama explica cómo se manejan las ramas y las solicitudes en el sistema:
+
 ![Gestión de versiones](static/images/gestion_versiones.png)
 
-Este diagrama muestra cómo se gestionan solicitudes por cambio y por error, con su revisión respectiva antes de fusionarse a `main`.
+- Se manejan **dos tipos de solicitudes**: cambios solicitados por el cliente y correcciones de errores.
+- Ambas solicitudes se desarrollan en ramas separadas (`feature/` y `fix/`).
+- Cada rama pasa por **una revisión antes de integrarse** a `main`.
+- Se registra qué **versiones** están saliendo, con fecha, motivo y estado.
+
+---
+
+## 📂 Archivos adicionales
+
+- [`CHANGELOG.md`](CHANGELOG.md): Registro detallado de cada versión publicada.
+- [`requirements.txt`](requirements.txt): Dependencias necesarias para correr la aplicación.
+- [`app.py`](app.py): Archivo principal del sistema.
+
+---
+
+## 🚀 Tecnologías utilizadas
+
+- Python (Flask)
+- HTML5 + CSS3
+- SQLite como base de datos local
+- Git y GitHub para control de versiones
 
 ---
 
 ## ✨ Autor
 
 **Alexander** – [GitHub](https://github.com/Alexgt011)
-
