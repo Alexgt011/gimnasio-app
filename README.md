@@ -77,7 +77,6 @@ Este diagrama explica cómo se manejan las ramas y las solicitudes en el sistema
 ## 📂 Archivos adicionales
 
 - [`CHANGELOG.md`](CHANGELOG.md): Registro detallado de cada versión publicada.
-- [`requirements.txt`](requirements.txt): Dependencias necesarias para correr la aplicación.
 - [`app.py`](app.py): Archivo principal del sistema.
 
 ---
