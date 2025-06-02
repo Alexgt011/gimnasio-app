@@ -36,4 +36,28 @@ A continuación se describe la evolución de los componentes principales del sis
 - L1, L2, Ex2
 
 > Esto permite mantener trazabilidad de qué versiones de cada componente forman parte de una versión estable del sistema.
+>
+> ## 🧩 Gestión de Versiones
+
+Este sistema sigue un control de versiones basado en ramas de desarrollo y mantenimiento. A continuación se muestra el diagrama:
+
+![Gestión de versiones](static/images/gestion_versiones.png)
+
+### 🔄 Solicitudes de Cambio
+
+- **v2.1**: Corrección crítica de error por monto cero.  
+- **v3.1 (new UI)**: Mejora visual solicitada por cliente.
+
+### 📌 Ramas activas
+
+- `main`: Rama principal
+- `revision/v2.1`: Hotfix por error
+- `feature/new-ui`: Nueva interfaz para v3.1
+
+### 📅 Releases
+
+- v1.0 - Versión inicial
+- v2.0 - Mejora lógica
+- v3.0 - Versión estable posterior a integración de v2.1 y v3.1
+
 
