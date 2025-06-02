@@ -1,63 +1,46 @@
-# 🏋️ Sistema de Gestión de Gimnasio
+# Sistema de Gestión de Gimnasio 🏋️‍♂️
 
-Este repositorio contiene el sistema desarrollado para la gestión de instructores, planes y usuarios de un gimnasio. Incluye backend en Flask, base de datos SQLite, y pruebas automatizadas.
+Aplicación desarrollada para gestionar instructores, turnos, reportes y autenticación.
 
-## 🚀 Funcionalidades
+---
 
-- Registro e inicio de sesión de instructores.
-- Gestión de horarios y turnos.
-- Pruebas automatizadas con Selenium y Faker.
-- Reportes y almacenamiento en base de datos.
+## 🧾 Registro de versiones
 
+| Versión | Fecha     | Descripción                        |
+|--------|-----------|------------------------------------|
+| v1.0   | 2025-05-26 | Versión inicial funcional          |
+| v2.1   | 2025-05-30 | Fix en módulo de reportes (error)  |
+| v3.1   | 2025-06-02 | UI mejorada con nueva funcionalidad|
 
-## 📦 Gestión de Versiones
+---
 
-A continuación se describe la evolución de los componentes principales del sistema de gimnasio:
+## 🔄 Solicitudes gestionadas
 
-### 🔁 Codelines
+### ✅ Solicitud de Cambio (Cliente)
+- **N°:** CR-0018
+- **Sistema:** Ventas
+- **Cambio:** Exportar a Excel (además de PDF)
+- **Estado:** En desarrollo (Sprint 4)
 
-- **Codeline (A):** A → A1.1 → A1.2 → A1.3
-- **Codeline (B):** B → B1.1 → B1.2 → B1.3
-- **Codeline (C):** C → C1.1 → C1.2 → C1.3
+### 🐞 Solicitud de Corrección de Error
+- **N°:** CR-0019
+- **Sistema:** Autoservicio
+- **Error:** Ticket Bs 0
+- **Estado:** En espera de pruebas
 
-### 🧩 Librerías y Componentes Externos
+---
 
-- L1, L2
-- Ex1, Ex2
+## 🗂️ Gestión de versiones (Git)
 
-### 🧱 Baselines
+![Gestión de versiones](static/images/ramas_git.png)
 
-#### Baseline V1:
-- A, B1.2, C1.1
-- L1, L2, Ex1
+Este diagrama representa cómo se implementaron correcciones (`fix`) y nuevas funcionalidades (`feature`) en ramas separadas, luego integradas a `main`.
 
-#### Baseline V2:
-- A1.3, B1.2, C1.2
-- L1, L2, Ex2
+---
 
-> Esto permite mantener trazabilidad de qué versiones de cada componente forman parte de una versión estable del sistema.
->
-> ## 🧩 Gestión de Versiones
+## 📁 Otros archivos
 
-Este sistema sigue un control de versiones basado en ramas de desarrollo y mantenimiento. A continuación se muestra el diagrama:
+- [`CHANGELOG.md`](./CHANGELOG.md): registro detallado de cambios.
 
-![Gestión de versiones](static/images/gestion_versiones.png)
-
-### 🔄 Solicitudes de Cambio
-
-- **v2.1**: Corrección crítica de error por monto cero.  
-- **v3.1 (new UI)**: Mejora visual solicitada por cliente.
-
-### 📌 Ramas activas
-
-- `main`: Rama principal
-- `revision/v2.1`: Hotfix por error
-- `feature/new-ui`: Nueva interfaz para v3.1
-
-### 📅 Releases
-
-- v1.0 - Versión inicial
-- v2.0 - Mejora lógica
-- v3.0 - Versión estable posterior a integración de v2.1 y v3.1
 
 
